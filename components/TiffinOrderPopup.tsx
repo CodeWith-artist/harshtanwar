@@ -40,25 +40,27 @@ export default function TiffinService({ onClose }: { onClose: () => void }) {
     }
   };
 
- const handleOrder = () => {
-    if (!name.trim() || !address.trim() || !landmark.trim()) {
+  const handleOrder = () => {
+      if (!name.trim() || !address.trim() || !landmark.trim()) {
         setError("⚠️ Please fill all the details before ordering");
         return;
-    }
+      }
 
-    setError(""); // clear error
+      setError("");
 
-    const phoneNumber = "919958508707";
+      const phoneNumber = "919958508707";
 
-    const message = `Hello, I want to order Tiffin Service.%0A
-    Name: ${name}%0A
-    Address: ${address}%0A
-    Landmark: ${landmark}%0A
-    Price: ₹150 per tiffin`;
+      const message = `🍱 *Tiffin Order Request* %0A%0A
+    👤 *Name:* ${name} %0A
+    📍 *Address:* ${address} %0A
+    🏠 *Landmark:* ${landmark} %0A%0A
+    💰 *Price:* ₹150 per tiffin %0A
+    🚚 *Delivery:* Free upto 1km %0A%0A
+    🙏 Please confirm my order.`;
 
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+      const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
-    window.open(url, "_blank");
+      window.open(url, "_blank");
     };
 
   return (

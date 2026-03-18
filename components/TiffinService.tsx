@@ -17,9 +17,12 @@ export default function TiffinService() {
         <p className="text-gray-500 mt-2 text-sm md:text-base">
           Fresh home-cooked meals delivered daily
         </p>
-        <p className="text-gray-500 mt-1 text-lg md:text-base">
-            Free delivery within a <span className="font-semibold text-red-600">1km</span> radius. ₹150 per tiffin.
+        <div className="mt-4 bg-yellow-50 border border-yellow-200 text-yellow-800 rounded-xl p-4 max-w-md mx-auto shadow-sm">
+        <p className="text-sm md:text-base leading-relaxed">
+            📌 <span className="font-semibold">Note:</span> Free delivery upto <span className="font-bold">1km</span> <br />
+            Charges apply beyond 1km.
         </p>
+        </div>
       </div>
 
       {/* Main Layout */}
@@ -27,6 +30,7 @@ export default function TiffinService() {
 
         {/* Menu Card */}
         <div className="flex-1 bg-white/80 backdrop-blur-lg shadow-xl rounded-3xl overflow-hidden border border-gray-200">
+        <span className="text-12 text-gray-900 font-bold bg-amber-300 block py-3 px-4 text-center">Daily Changing Menu - Fresh Sabji, Fresh Taste</span>
           {tiffinMenu.map((item, index) => (
             <div
               key={index}
@@ -58,7 +62,7 @@ export default function TiffinService() {
 
             <div className="text-sm text-gray-600 space-y-1">
               <p>✔ 4 Fresh Roti</p>
-              <p>✔ Dal & Sabzi</p>
+              <p>✔ Sabji as per day mentioned in menu</p>
               <p>✔ Rice</p>
               <p>✔ Salad / Achar</p>
             </div>

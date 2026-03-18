@@ -52,7 +52,7 @@ export default function OrderPage() {
             <Banner
                 title="Delicious Meals Delivered to Your Doorstep"
                 subtitle="Choose from our Tiffin Service or Menu Order"
-                image="/food.jpg"
+                image="/banner.jpg"
             />
             <ServiceToggle
                 selected={serviceType}
