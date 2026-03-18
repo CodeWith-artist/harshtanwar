@@ -17,6 +17,9 @@ export default function TiffinService() {
         <p className="text-gray-500 mt-2 text-sm md:text-base">
           Fresh home-cooked meals delivered daily
         </p>
+        <p className="text-gray-500 mt-1 text-lg md:text-base">
+            Free delivery within a <span className="font-semibold text-red-600">1km</span> radius. ₹150 per tiffin.
+        </p>
       </div>
 
       {/* Main Layout */}
